@@ -1,0 +1,12 @@
+date: 05/05/20, time: 23:19:40, level: 3, winner: computer, guesses: 12
+date: 05/05/20, time: 23:20:50, level: 4, winner: tie, guesses: 2
+date: 05/25/20, time: 22:56:51, level: 4, winner: player, guesses: 6
+date: 05/25/20, time: 22:58:24, level: 1, winner: computer, guesses: 6
+date: 05/25/20, time: 23:03:34, level: 1, winner: player, guesses: 10
+date: 05/25/20, time: 23:09:06, level: 1, winner: player, guesses: 6
+date: 05/25/20, time: 23:09:44, level: 1, winner: computer, guesses: 6
+date: 05/25/20, time: 23:10:16, level: 4, winner: tie, guesses: 1
+date: 05/25/20, time: 23:15:27, level: 4, winner: tie, guesses: 1
+date: 05/25/20, time: 23:16:23, level: 1, winner: computer, guesses: 6
+date: 05/25/20, time: 23:16:52, level: 1, winner: computer, guesses: 4
+date: 05/25/20, time: 23:23:07, level: 4, winner: computer, guesses: 41
