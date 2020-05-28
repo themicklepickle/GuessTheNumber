@@ -201,6 +201,3 @@ def guessing_algorithm(player_target, player_scope, computer_target, computer_sc
 
 def play_again():
 	return turtle.numinput("Play Again?", "Yes (1) or No (0):", minval=0, maxval=1)
-
-
-
