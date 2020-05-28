@@ -8,7 +8,7 @@ from School.Assignments.guess_the_number.graphics import *
 from School.Assignments.guess_the_number.calculations import *
 from datetime import date, datetime
 
-again = 1
+again = True
 
 while again:
 	txt_file = open("data.txt", "a")
