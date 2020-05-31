@@ -4,12 +4,15 @@
 # May 1, 2020
 
 # import all functions from modules
-from graphics import *
-from calculations import *
+from School.Assignments.guess_the_number.graphics import *
+from School.Assignments.guess_the_number.calculations import *
+from datetime import date, datetime
 
-again = 1
+again = True
 
 while again:
+	txt_file = open("data.txt", "a")
+	csv_file = open("data.csv", "a")
 
 	main_screen()  # display main screen
 	draw_levels()  # draw levels and their ranges in the left column
@@ -30,8 +33,12 @@ while again:
 
 	winner, guesses = guessing_algorithm(player_target, player_scope, computer_target, computer_scope)  # run guessing algorithm
 
-	print(winner)  # displays the winner
+	display_winner(winner, guesses)  # display winner and the number of guesses
 
-	print(guesses)  # prints the number of guesses used
+	txt_file.write(f"date: {date.today().strftime('%m/%d/%y')}, time: {datetime.now().strftime('%H:%M:%S')}, level: {level}, winner: {winner}, guesses: {str(guesses)}\n")
+	csv_file.write(f"{date.today().strftime('%m/%d/%y')},{datetime.now().strftime('%H:%M:%S')},{level},{winner},{guesses}\n")
+
+	txt_file.close()
+	csv_file.close()
 
 	again = play_again()
